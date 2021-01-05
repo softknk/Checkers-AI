@@ -13,6 +13,11 @@ public class Board implements BoardFunction {
 
     @Override
     public void initBoard() {
+        // free all pieces
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) setPieceOnPosition(NONE, i, j);
+        }
+
         // init black pieces
         for (int i = 0; i < board.length/2 - 1; i++) {
             for (int j = 0; j < board.length; j++) if (i % 2 == 0 && j % 2 != 0 || i % 2 != 0 && j % 2 == 0) setPieceOnPosition(BLACK, i, j);

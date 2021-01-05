@@ -39,6 +39,9 @@ public class View extends Application implements EventHandler<ActionEvent> {
                 if (viewModel.getBoard().won() != BoardFunction.NONE_PLAYER) System.out.println("Game over!");
             } else if (event.getCode() == KeyCode.R) {
                 selected = false;
+            } else if (event.getCode() == KeyCode.P) {
+                viewModel.getBoard().initBoard();
+                redraw();
             }
         });
 

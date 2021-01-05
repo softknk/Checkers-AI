@@ -11,3 +11,4 @@ Checkers AI based on the Minimax algorithm
 ####   go from and then the piece you wanna go to.
 #### - Press 'R' to reset your input (if you wanna choose another piece to go)
 #### - Press 'ENTER' to let the AI make a move after you made yours
+#### - Press 'P' to reset the game board and start a new game
